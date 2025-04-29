@@ -214,6 +214,14 @@ function App() {
 									icon: <FaReact className="text-blue-500" />,
 								},
 								{
+									name: "Expo",
+									icon: <FaReact className="text-blue-500" />,
+								},
+								{
+									name: "EAS",
+									icon: <FaReact className="text-blue-500" />,
+								},
+								{
 									name: "React.js",
 									icon: <FaReact className="text-blue-500" />,
 								},
