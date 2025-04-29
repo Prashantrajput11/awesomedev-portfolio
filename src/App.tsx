@@ -10,6 +10,7 @@ import {
 	X,
 } from "lucide-react";
 import { Timeline } from "./components/Timeline";
+import BSHImage from "./assets/BSH.png";
 
 import { ContactForm } from "./components/ContactForm";
 import {
@@ -171,7 +172,7 @@ function App() {
 						{/* Profile Image */}
 						<div className="flex justify-center">
 							<img
-								src="/your-profile-image.jpg" // Replace with your actual image path
+								src="https://pbs.twimg.com/profile_images/1911455918727819264/DROKBaP5_400x400.jpg" // Replace with your actual image path
 								alt="Prashant Tanwar"
 								className="w-64 h-64 object-cover rounded-full border-4 border-teal-500 shadow-lg"
 							/>
@@ -226,6 +227,10 @@ function App() {
 								},
 								{
 									name: "Redux Toolkit",
+									icon: <SiRedux className="text-purple-600" />,
+								},
+								{
+									name: "Zustand",
 									icon: <SiRedux className="text-purple-600" />,
 								},
 								{
@@ -291,16 +296,16 @@ function App() {
 						<div className="space-y-12">
 							<ProjectCard
 								title="Mental Health App"
-								description="A mobile app for mental health assessment and therapy booking."
-								tags={["React Native", "Firebase", "Supabase"]}
-								image="/simulator1.png" // Replace with your actual image path
+								description="A mobile app for mental health assessment and AI Therapy."
+								tags={["React Native", "Firebase", "Supabase", "AI"]}
+								image={BSHImage} // Replace with your actual image path
 								techStack={[
 									"React Native",
 									"Firebase",
 									"Supabase",
 									"TypeScript",
 								]}
-								liveLink="https://yourapp.com"
+								liveLink="https://play.google.com/store/apps/details?id=com.superhappy&pcampaignid=web_share"
 								sourceCode="https://github.com/yourrepo"
 							/>
 
