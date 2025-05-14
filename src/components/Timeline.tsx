@@ -3,6 +3,23 @@ import React from "react";
 export const Timeline = () => {
 	const experiences = [
 		{
+			title: "Indie Mobile Developer | Freelancer",
+			company: "",
+			period: "Jan 2025 - Present",
+			description: [
+				"Introduced interactive features like Likes, Comments, Polls, and Quizzes to increase retention and community interaction.",
+				"Built a real-time one-on-one chat (v1) using Firebase; later collaborated with senior dev to implement a more scalable version using Socket.IO.",
+				"Built an in-app feedback system to gather insights and improve user satisfaction.",
+				"Integrated Google AdMob to drive ad revenue.",
+				"Implemented Razorpay for smooth psychologist booking and payment handling.",
+				"Enabled users to control interactions by implementing a comment-blocking feature for a safer space.",
+				"Built a premium group feature enabling paid access to therapy groups, with secure sharing of guided solutions, documents, and images — helping monetize the app and support community healing.",
+				"Implemented push notifications using Firebase and Notifee to improve user engagement with timely updates and alerts.",
+				"Handled deployment for both iOS and Android, ensuring smooth and consistent app releases.",
+				"Implemented React Query for data fetching with built-in caching to reduce redundant API calls and boost performance.",
+			],
+		},
+		{
 			title: "React Native Developer",
 			company: "The Confession Boxx",
 			period: "Jan 2024 - Sep 2024",
@@ -86,13 +103,13 @@ export const Timeline = () => {
 									<p className="text-sm text-gray-500 dark:text-gray-400 mt-1 mb-4">
 										{experience.period}
 									</p>
-									<ul className="list-disc ml-4 space-y-2 text-gray-600 dark:text-gray-300">
+									{/* <ul className="list-disc ml-4 space-y-2 text-gray-600 dark:text-gray-300">
 										{experience.description.map((point, i) => (
 											<li key={i} className="text-sm leading-relaxed">
 												{point}
 											</li>
 										))}
-									</ul>
+									</ul> */}
 								</div>
 							</div>
 						</div>

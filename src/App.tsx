@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 import { Timeline } from "./components/Timeline";
 import BSHImage from "./assets/BSH.png";
+import PORTFOLIO_PIC from "./assets/portfolio_pic.jpeg";
+import SUPER_HAPPY from "./assets/super_happy.png";
 
 import { ContactForm } from "./components/ContactForm";
 import {
@@ -33,7 +35,7 @@ import {
 import ProjectCard from "./components/ProjectCard";
 
 function App() {
-	const [darkMode, setDarkMode] = useState(false);
+	const [darkMode, setDarkMode] = useState(true);
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const toggleDarkMode = () => setDarkMode(!darkMode);
@@ -172,7 +174,7 @@ function App() {
 						{/* Profile Image */}
 						<div className="flex justify-center">
 							<img
-								src="https://pbs.twimg.com/profile_images/1911455918727819264/DROKBaP5_400x400.jpg" // Replace with your actual image path
+								src={PORTFOLIO_PIC} // Replace with your actual image path
 								alt="Prashant Tanwar"
 								className="w-64 h-64 object-cover rounded-full border-4 border-teal-500 shadow-lg"
 							/>
@@ -185,7 +187,7 @@ function App() {
 							</h2>
 							<p className="text-gray-600 dark:text-gray-300 mb-4">
 								I'm a passionate <strong>React Native Developer</strong> with{" "}
-								<strong>3 years</strong> of experience building innovative and
+								<strong>2 years</strong> of experience building innovative and
 								user-friendly mobile applications. I specialize in crafting
 								scalable, high-performance apps with a strong focus on UX.
 							</p>
@@ -306,7 +308,7 @@ function App() {
 								title="Mental Health App"
 								description="A mobile app for mental health assessment and AI Therapy."
 								tags={["React Native", "Firebase", "Supabase", "AI"]}
-								image={BSHImage} // Replace with your actual image path
+								image={SUPER_HAPPY} // Replace with your actual image path
 								techStack={[
 									"React Native",
 									"Firebase",
@@ -317,7 +319,7 @@ function App() {
 								sourceCode="https://github.com/yourrepo"
 							/>
 
-							<ProjectCard
+							{/* <ProjectCard
 								title="E-commerce Mobile App"
 								description="A modern mobile shopping app with real-time inventory and secure payments."
 								tags={["React Native", "Redux Toolkit", "Stripe"]}
@@ -331,9 +333,9 @@ function App() {
 								liveLink="https://yourshop.com"
 								sourceCode="https://github.com/yourrepo"
 								reverse // Image on the right
-							/>
+							/> */}
 
-							<ProjectCard
+							{/* <ProjectCard
 								title="Social Media App"
 								description="A social networking app with real-time messaging and content sharing."
 								tags={["React Native", "Firebase", "Node.js"]}
@@ -341,7 +343,7 @@ function App() {
 								techStack={["React Native", "Firebase", "Node.js", "Socket.io"]}
 								liveLink="https://socialapp.com"
 								sourceCode="https://github.com/yourrepo"
-							/>
+							/> */}
 						</div>
 					</div>
 				</section>
